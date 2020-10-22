@@ -2,10 +2,12 @@ import express from 'express';
 import 'express-async-errors';
 import path from 'path';
 import cors from 'cors';
+import * as dotenv from 'dotenv';
 import './database/connection';
 import errorHandler from './errors/handler';
 import routes from './routes';
 
+dotenv.config({ path: __dirname + '/.env' });
 const app = express();
 
 
