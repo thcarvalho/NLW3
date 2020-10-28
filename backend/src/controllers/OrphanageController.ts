@@ -82,6 +82,24 @@ const OrphanageController = {
     })
 
     return res.json(OrphanageView.render(orphanage));
+  },
+
+  async update(req: Request, res: Response) {
+    const { id } = req.params;
+
+    const orphanagesRepository = getRepository(Orphanage);
+    await orphanagesRepository.update(id, req.body);
+
+    return res.status(201).send();
+  },
+
+  async delete(req: Request, res: Response) {
+    const { id } = req.params;
+
+    const orphanagesRepository = getRepository(Orphanage);
+    await orphanagesRepository.delete(id);
+
+    return res.status(201).send();
   }
 }
 
