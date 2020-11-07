@@ -1,0 +1,128 @@
+#page-restrict {
+  display: flex;
+  flex-direction: row;
+}
+
+#page-restrict .login-container {
+  background-color: #fff;
+  width: 520px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-restrict .login-container h1 {
+  margin-bottom: 40px;
+  color: #5C8599;
+}
+
+#page-restrict .login-container .input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-restrict .login-container .input-block input {
+  width: 360px;
+  height: 64px;
+  background-color: #F5F8FA;
+
+  border-radius: 20px;
+  border: 1px solid #D3E2E5;
+
+  outline: none;
+
+  padding: 0 16px;
+  margin-bottom: 16px;  
+  margin-top: 8px;
+
+  color: #5C8599;  
+}
+
+#page-restrict .login-container label {
+  font-size: 16px;
+  color: #8FA7B2;
+}
+
+#page-restrict .login-container .align-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-restrict .login-container .align-container .remember-check {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+#page-restrict .login-container .align-container .remember-check input[type=checkbox] {
+  /* visibility: hidden; */
+  width: 25px !important;
+  height: 25px !important;
+  margin-right: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance:none;
+
+  border: 1px solid #D3E2E5;
+  background-color: #F5F8FA;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+#page-restrict .login-container .align-container a {
+  text-decoration: none;
+  color: #8FA7B3;
+  font-size: 16px;
+
+  transition: color 2ms;
+}
+
+#page-restrict .login-container .align-container a:hover {
+  color: #7e95a0;
+}
+
+#page-restrict .login-container button {
+  width: 360px;
+  height: 64px;
+  border-radius: 20px;
+
+  margin-top: 42px;
+
+  border: 0;
+  color: #fff;
+  background-color: #37C77F;
+
+  opacity: 0.5;
+
+  outline: none;
+
+  transition: background-color 100ms;
+}
+
+#page-restrict .back-button {
+  position: absolute;
+  top: 40px;
+  right: 43px;
+  width: 48px;
+  height: 48px;
+
+  background: #EBF2F5;
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 100ms;
+}
+
+#page-restrict .back-button:hover {
+  background: #e0eef5;
+}
