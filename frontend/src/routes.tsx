@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import CreateOrphanage from './pages/CreateOrphanage';
+import ForgotPassword from './pages/ForgotPassword';
 
 import Landing from './pages/Landing';
 import Orphanage from './pages/Orphanage';
@@ -18,6 +19,7 @@ export default function Routes() {
         <Route path="/orphanages/:id" component={Orphanage} />
 
         <Route path="/access" component={RestrictAccessLogin} />
+        <Route path="/forgotpassword" component={ForgotPassword} />
       </Switch>
     </BrowserRouter>
   );
